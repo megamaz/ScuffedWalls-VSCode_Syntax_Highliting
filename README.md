@@ -1,2 +1,7 @@
-# ScuffedWalls-VSCode_Syntax_Highliting
-VScode (not Visual Studio) syntax highlighting for Scuffed Walls. There is no language server because Scuffed Walls does error checking upon saving.
+# Scuffed Walls Syntax Highlighting
+
+VScode Syntax Highlighter for Scuffed Walls. I did not include a language server as Scuffed Walls does error checking upon saving the file.\
+That's quite literally it.
+
+# Making a PR
+Fork the project, do your changes, and do a PR. Will review and merge if I like it

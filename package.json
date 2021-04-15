@@ -1,0 +1,25 @@
+{
+    "name": "scuffedwalls",
+    "displayName": "ScuffedWalls",
+    "description": "Syntax Highliter for Scuffed Walls",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.46.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "scuffedwalls",
+            "aliases": ["scuffedwalls", "scuffedwalls"],
+            "extensions": [".sw"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "scuffedwalls",
+            "scopeName": "source.sw",
+            "path": "./syntaxes/scuffedwalls.tmLanguage.json"
+        }]
+    }
+}

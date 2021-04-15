@@ -1,0 +1,91 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "scuffedwalls",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#comments"
+		},
+		{
+			"include":"#numbers"
+		},
+		{
+			"include":"#bool"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.scuffedwalls",
+				"match": "\\b(Workspace)\\b"
+			},
+			{
+				"name":"variable.name.scuffedwalls",
+				"match":"\\b(?<=Workspace:)[a-zA-Z].*\\b"
+			},
+			{
+				"name":"support.function.scuffedwalls",
+				"match": "(Random)"
+			},
+			{
+				"name":"entity.name.function.scuffedwalls",
+				"match":"(?<=(\\b|[^a-zA-Z])[0-9]:)(\\s|\\S)[^\\[].*"
+			},
+			{
+				"name":"variable.parameter.scuffedwalls",
+				"match":"\\s.+?(?=:)"
+			},
+			{
+				"name":"string.quoted.double.scuffedwalls",
+				"match":"(?<=\\S\\w:)(\\s|\\S)(?!(true|false|rue|alse))[^\\d\\[].*"
+			}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.scuffedwalls",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.scuffedwalls",
+					"match": "\\\\."
+				}
+			]
+		},
+		"comments":{
+			"name":"comment.scuffedwalls",
+			"begin":"#",
+			"end": "\n",
+			"patterns": [
+				{
+					"name":"comment.scuffedwalls",
+					"match": "#.*"
+				}
+			]
+		},
+		"numbers":{
+			"name":"number.scuffedwalls",
+			"patterns": [
+				{
+					"name":"constant.numeric.scuffedwalls",
+					"match":"([\\d]\\.[\\d])|\\-([\\d])|([\\d])"
+				}
+			]
+		},
+		"bool":{
+			"name":"boolean.scuffedwalls",
+			"patterns": [
+				{
+					"name":"constant.numeric.scuffedwalls",
+					"match":"\\b(true)|(false)\\b"
+				}
+			]
+		}
+	},
+	"scopeName": "source.sw"
+}
