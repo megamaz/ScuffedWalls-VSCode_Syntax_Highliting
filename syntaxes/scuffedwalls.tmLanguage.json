@@ -38,7 +38,7 @@
 			},
 			{
 				"name":"variable.parameter.scuffedwalls",
-				"match":"\\s.+?(?=:)"
+				"match":"[^0-9\\.].+?(?=:)"
 			},
 			{
 				"name":"string.quoted.double.scuffedwalls",
