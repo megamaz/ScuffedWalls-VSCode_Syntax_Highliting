@@ -30,7 +30,7 @@
 			},
 			{
 				"name":"support.function.scuffedwalls",
-				"match": "(Random)"
+				"match": "(Random|OrderPointDefinitions|HSLtoRGB|RandomInt|MultPointDefinition|RepeatPointDefinition)"
 			},
 			{
 				"name":"entity.name.function.scuffedwalls",
@@ -42,7 +42,7 @@
 			},
 			{
 				"name":"string.quoted.double.scuffedwalls",
-				"match":"(?<=\\S\\w:)(\\s|\\S)(?!(true|false|rue|alse))[^\\d\\[].*"
+				"match":"(?<=\\S\\w:)(?!(true|false|rue|alse))[^\\d\\s\\[].*"
 			}
 			]
 		},
